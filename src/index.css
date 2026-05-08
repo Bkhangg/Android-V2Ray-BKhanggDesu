@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-plus: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-plus antialiased;
+  }
+}
+
+.markdown-body h2 {
+  @apply text-2xl font-bold mt-8 mb-4 border-b border-zinc-800 pb-2;
+}
+
+.markdown-body p {
+  @apply my-4 leading-relaxed;
+}
